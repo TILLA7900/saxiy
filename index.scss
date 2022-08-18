@@ -1,0 +1,71 @@
+@mixin holat ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #97dafe;
+}
+.sayt{
+    width: 1023px;
+    height: auto;
+    margin: 0 auto;
+
+    @include holat(column, space-between, center);
+    & > .head{
+        width: 100%;
+        height: auto;
+        background-color: rgb(245, 181, 97);
+        
+       @include holat(row, space-evenly, center);
+       & > h3{
+        font-size: 25px;
+        line-height: 30px;
+        font-family: fantasy;
+        color: rgb(208, 213, 213);
+       }
+       & > ul{
+        width: 400px;
+        height: auto;
+          @include holat(row, space-between, center);
+          & > li{
+            list-style-type: none;
+
+            & > a{
+                text-decoration: none;
+                color: cadetblue;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: sans-serif;
+            }
+          }
+        
+       }
+
+    }
+    & > .content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 80px;
+        box-sizing: border-box;
+        background-color: #faa5ff;
+        & > h1{
+            font-size: 38px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(124, 87, 42);
+        }
+        & > p{
+            color: aquamarine;
+            font-size: 18px;
+            font-family: sans-serif;
+            margin-top: 30px;
+        }
+    }
+}

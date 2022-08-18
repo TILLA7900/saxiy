@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #97dafe;
+}
+
+.sayt {
+  width: 1023px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sayt > .head {
+  width: 100%;
+  height: auto;
+  background-color: #f5b561;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sayt > .head > h3 {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: fantasy;
+  color: #d0d5d5;
+}
+
+.sayt > .head > ul {
+  width: 400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sayt > .head > ul > li {
+  list-style-type: none;
+}
+
+.sayt > .head > ul > li > a {
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: sans-serif;
+}
+
+.sayt > .content {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #faa5ff;
+}
+
+.sayt > .content > h1 {
+  font-size: 38px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #7c572a;
+}
+
+.sayt > .content > p {
+  color: aquamarine;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=index.css.map */
